@@ -40,7 +40,7 @@ export const KaraokePage = ({city}: KaraokePageProps) => {
       </header>
 
       <main className="flex min-h-0 flex-1 flex-col items-center justify-center px-4 py-4 md:px-8 md:py-6">
-        <div className="mb-4 text-center md:mb-6 animate-fade-in-up" style={{ animationDelay: "150ms" }}>
+        <div className="mb-4 text-center md:mb-6 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
           <h1 className="text-3xl font-bold tracking-tight drop-shadow-lg md:text-5xl">
             Karaoke w MK Bowling
           </h1>
@@ -49,7 +49,7 @@ export const KaraokePage = ({city}: KaraokePageProps) => {
           </p>
         </div>
 
-        <div className="mb-4 flex items-center gap-4 text-xs text-white/80 md:mb-6 md:gap-6 md:text-sm animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+        <div className="mb-4 flex items-center gap-4 text-xs text-white/80 md:mb-6 md:gap-6 md:text-sm animate-fade-in-up" style={{ animationDelay: "200ms" }}>
           <span className="flex items-center gap-1.5">
             <Calendar className="size-3.5 md:size-4" />
             Każdy piątek
@@ -65,7 +65,7 @@ export const KaraokePage = ({city}: KaraokePageProps) => {
             <Card
               key={name}
               className="relative flex gap-0 mx-auto max-w-md w-full border-0 bg-white/10 text-white ring-white/20 backdrop-blur-sm animate-fade-in-up"
-              style={{ animationDelay: `${450 + index * 150}ms` }}
+              style={{ animationDelay: `${300 + index * 100}ms` }}
             >
                   <Icon className="absolute top-1 right-1 size-10 text-red-400 md:size-12" />
               <CardHeader className="pb-0">
@@ -83,7 +83,7 @@ export const KaraokePage = ({city}: KaraokePageProps) => {
         </div>
       </main>
 
-      <footer className="shrink-0 border-t border-white/10 bg-black/20 px-4 py-3 md:px-8 md:py-4 animate-fade-in-up" style={{ animationDelay: "1050ms" }}>
+      <footer className="shrink-0 border-t border-white/10 bg-black/20 px-4 py-3 md:px-8 md:py-4 animate-fade-in-up" style={{ animationDelay: "650ms" }}>
         <div className="mx-auto flex max-w-4xl flex-col items-center justify-between gap-1 text-center text-xs text-white/60 md:flex-row md:text-sm">
           <span>MK Bowling &mdash; Rozrywka, kręgle, bilard i karaoke</span>
           <span>&copy; {new Date().getFullYear()} MK Bowling. Wszelkie prawa zastrzeżone.</span>
