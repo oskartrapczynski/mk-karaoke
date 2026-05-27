@@ -30,7 +30,7 @@ export const KaraokePage = ({localization: {city, mapUrl}}: KaraokePageProps) =>
     <div className="flex h-dvh w-full flex-col bg-linear-to-br from-red-700 via-red-600 to-rose-500 text-white">
       <header className="flex shrink-0 items-center justify-between px-4 pt-4 md:px-8 md:pt-6 animate-fade-in-up">
         <img
-          src="/mk-logo.webp"
+          src={`${import.meta.env.BASE_URL}mk-logo.webp`}
           alt="MK Bowling"
           className="h-10 w-auto md:h-14"
         />
