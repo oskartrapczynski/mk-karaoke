@@ -6,6 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://oskartrapczynski.github.io',
+  base: '/mk-karaoke/',
   integrations: [react()],
 
   vite: {
