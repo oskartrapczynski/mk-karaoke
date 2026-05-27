@@ -1,8 +1,9 @@
 ---
 import { KaraokePage } from "@/components/KaraokePage";
+import { LOCALIZATIONS, localizationData } from "@/data/localizations";
 import Layout from "@/layouts/Layout.astro";
 ---
 
 <Layout>
-  <KaraokePage city="Katowice" />
+  <KaraokePage localization={localizationData[LOCALIZATIONS.katowice]} />
 </Layout>

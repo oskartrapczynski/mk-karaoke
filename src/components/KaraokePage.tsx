@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import type {  LocalizationsContent } from "@/data/localizations";
 import { CirclePile, RectangleEllipsis, Pizza, MapPin, Calendar, Clock } from "lucide-react";
 
 
@@ -21,10 +22,10 @@ const prizes = [
 ];
 
 type KaraokePageProps = {
-  city: string
+  localization: LocalizationsContent
 }
 
-export const KaraokePage = ({city}: KaraokePageProps) => {
+export const KaraokePage = ({localization: {city, mapUrl}}: KaraokePageProps) => {
   return (
     <div className="flex h-dvh w-full flex-col bg-linear-to-br from-red-700 via-red-600 to-rose-500 text-white">
       <header className="flex shrink-0 items-center justify-between px-4 pt-4 md:px-8 md:pt-6 animate-fade-in-up">
@@ -33,10 +34,10 @@ export const KaraokePage = ({city}: KaraokePageProps) => {
           alt="MK Bowling"
           className="h-10 w-auto md:h-14"
         />
-        <div className="flex items-center gap-2 text-xs text-white/80 md:text-sm">
+        <a href={mapUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-xs text-white/80 md:text-sm">
           <MapPin className="size-3.5 md:size-4" />
           <span>MK Bowling, {city}</span>
-        </div>
+        </a>
       </header>
 
       <main className="flex min-h-0 flex-1 flex-col items-center justify-center px-4 py-4 md:px-8 md:py-6">
